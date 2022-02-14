@@ -19,19 +19,19 @@ do {
 } while (check == false);
 
 // converto la parola inserita in un'array
-let output1 = parola.split('');
-console.log('output1 ' + output1);
+let parolaSplit = parola.split('');
+console.log(parolaSplit);
 
 // inverto i caratteri dell'array
-let output2 = output1.reverse();
-console.log('output2 ' + output2);
+let parolaReverse = parolaSplit.reverse();
+console.log(parolaReverse);
 
 // faccio tornare l'array ad una stringa
-let output3 = output2.toString('');
-console.log('output3 ' + output3);
+let parolaString = parolaReverse.toString('');
+console.log(parolaString);
 
 // rimuovo le virgole dalla stringa
-let parolaInvertita = output3.replace(/,/g, '');
+let parolaInvertita = parolaString.replace(/,/g, '');
 console.log(parolaInvertita)
 
 
