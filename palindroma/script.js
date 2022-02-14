@@ -18,27 +18,35 @@ do {
     }
 } while (check == false);
 
-// converto la parola inserita in un'array
-let parolaSplit = parola.split('');
-console.log(parolaSplit);
+verificaPalindroma (parola);
 
-// inverto i caratteri dell'array
-let parolaReverse = parolaSplit.reverse();
-console.log(parolaReverse);
+function verificaPalindroma(parolaInserita) {
 
-// faccio tornare l'array ad una stringa
-let parolaString = parolaReverse.toString('');
-console.log(parolaString);
+        // converto la parola inserita in un'array
+    let parolaSplit = parolaInserita.split('');
+    console.log(parolaSplit);
 
-// rimuovo le virgole dalla stringa
-let parolaInvertita = parolaString.replace(/,/g, '');
-console.log(parolaInvertita)
+    // inverto i caratteri dell'array
+    let parolaReverse = parolaSplit.reverse();
+    console.log(parolaReverse);
+
+    // faccio tornare l'array ad una stringa
+    let parolaString = parolaReverse.toString('');
+    console.log(parolaString);
+
+    // rimuovo le virgole dalla stringa
+    let parolaInvertita = parolaString.replace(/,/g, '');
+    console.log(parolaInvertita)
 
 
-// se la parola inserita dall'utente è uguale alla stessa parola al contrario
-if (parola == parolaInvertita) {
-    alert('è una parola palindroma!');
-} else {
-    alert('non è una parola palindroma!');
+    // se la parola inserita dall'utente è uguale alla stessa parola al contrario
+    if (parola == parolaInvertita) {
+        alert('è una parola palindroma!');
+    } else {
+        alert('non è una parola palindroma!');
+    }
+
+
 }
+
 
